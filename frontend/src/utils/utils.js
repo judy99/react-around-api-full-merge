@@ -15,4 +15,4 @@ export const httpStatusCode = {
 };
 
 // export const BASE_URL = 'http://www.liakurianova.students.nomoreparties.site';
-export const BASE_URL = 'http://localhost:3000';
+export const BASE_URL = '';
