@@ -1,0 +1,38 @@
+@import url('__bottom/gallery__bottom.css');
+@import url('__image/gallery__image.css');
+@import url('__item/gallery__item.css');
+@import url('__like/gallery__like.css');
+@import url('__title/gallery__title.css');
+@import url('__icon-trash/gallery__icon-trash.css');
+@import url('__like-wrapper/gallery__like-wrapper.css');
+@import url('__score/gallery__score.css');
+
+.gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 282px);
+  grid-template-rows: repeat(2, 361px);
+  grid-column-gap: 18px;
+  grid-row-gap: 21px;
+  margin-bottom: 66px;
+}
+
+@media screen and (max-width: 920px) {
+  .gallery {
+    grid-template-columns: repeat(2, 282px);
+    grid-template-rows: repeat(3, 361px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(1, 282px);
+    margin-bottom: 48px;
+    justify-content: center;
+  }
+}

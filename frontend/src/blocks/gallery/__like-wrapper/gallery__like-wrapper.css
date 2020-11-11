@@ -1,0 +1,7 @@
+.gallery__like-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+  margin-right: 21px;
+  /* justify-content: space-between; */
+}

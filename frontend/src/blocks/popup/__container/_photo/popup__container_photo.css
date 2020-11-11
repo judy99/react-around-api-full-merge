@@ -1,0 +1,12 @@
+.popup__container.popup__container_photo {
+  width: auto;
+  height: auto;
+  max-width: 75vw;
+  max-height: 75vh;
+  background: none;
+  top: 90px;
+  border-radius: 0;
+  left: auto;
+  padding: 0;
+  min-width: auto;
+}

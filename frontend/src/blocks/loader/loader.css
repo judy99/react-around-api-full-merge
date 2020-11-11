@@ -1,0 +1,16 @@
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .5;
+  z-index: 9999;
+}
+.loader > i {
+  z-index: 9999;
+  display: block;
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  font-size: 4em;
+}

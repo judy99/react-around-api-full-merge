@@ -1,0 +1,11 @@
+.menu__link {
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  padding-left: 24px;
+  color: #A9A9A9;
+}
+
+.menu__link:hover {
+  opacity: 0.6;
+}

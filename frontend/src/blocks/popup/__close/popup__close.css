@@ -1,0 +1,22 @@
+.popup__close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  font-size: 67px;
+  transform: rotate(45deg);
+  font-weight: 200;
+  padding: 0;
+  line-height: 43px;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.popup__close:hover {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.popup__close:focus {
+  outline: none;
+}

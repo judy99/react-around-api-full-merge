@@ -1,0 +1,12 @@
+.profile__info-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__info-wrapper {
+    width: 100%;
+    padding: 0;
+    padding-top: 22px;
+  }
+}

@@ -1,0 +1,9 @@
+@import url('__heading/add-card__heading.css');
+@import url('__title/add-card__title.css');
+@import url('__image-link/add-card__image-link.css');
+@import url('__create/add-card__create.css');
+
+.add-card {
+  display: flex;
+  flex-direction: column;
+}

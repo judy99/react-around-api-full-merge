@@ -1,0 +1,12 @@
+.change-avatar__link {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.change-avatar__link::placeholder {
+  color: rgba(0,0,0,.2);
+  font-size: 14px;
+  line-height: 30px;
+}

@@ -1,0 +1,13 @@
+.profile__avatar-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../images/pen-hover-avatar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s ease;
+}

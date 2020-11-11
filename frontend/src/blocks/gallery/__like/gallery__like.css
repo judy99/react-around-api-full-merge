@@ -1,0 +1,21 @@
+.gallery__like {
+  background-image: url('../../../images/heart.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+  width: 21px;
+  height: 18px;
+  /* align-self: center; */
+  background-color: #fff;
+  border: none;
+  margin-bottom: 6px;
+}
+
+.gallery__like.gallery__like_active {
+  background-image: url('../../../images/heart-filled.png');
+}
+
+.gallery__like:hover {
+  opacity: .6;
+}

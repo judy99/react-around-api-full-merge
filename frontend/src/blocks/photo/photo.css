@@ -1,0 +1,19 @@
+.photo {
+  margin: 0;
+  align-self: center;
+}
+
+.photo__item {
+  max-width: 75vw;
+  width: auto;
+  max-height: 75vh;
+  height: auto;
+}
+
+.photo__title {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  padding-top: 10px;
+}

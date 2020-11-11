@@ -1,0 +1,9 @@
+.menu__link.menu__link_active {
+  cursor: auto;
+  color: #fff;
+  font-weight: 500;
+}
+
+.menu__link.menu__link_active:hover {
+  opacity: 1;
+}

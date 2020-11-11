@@ -1,0 +1,10 @@
+@import url('__link/menu__link.css');
+@import url('__link/_active/menu__link_active.css');
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}

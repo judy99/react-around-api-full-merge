@@ -1,0 +1,9 @@
+@import url('__heading/edit-profile__heading.css');
+@import url('__job/edit-profile__job.css');
+@import url('__name/edit-profile__name.css');
+@import url('__save/edit-profile__save.css');
+
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+}

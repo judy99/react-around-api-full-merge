@@ -1,0 +1,25 @@
+@import url('__logo/header__logo.css');
+
+.header {
+  padding-top: 45px;
+  border-bottom: 1px solid #545454;
+  width: 882px;
+  margin: 0 auto;
+
+  /* add */
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 920px) {
+  .header {
+    width: calc(100% - 2 * 40px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    padding-top: 35px;
+  }
+}

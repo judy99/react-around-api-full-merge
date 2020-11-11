@@ -1,0 +1,23 @@
+.gallery__item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 78%;
+  background-origin: border-box;
+  max-height: 361px;
+  height: 361px;
+}
+
+.gallery__item:hover {
+  cursor: pointer;
+}
+
+/* show just 6 first items */
+.gallery__item:nth-child(n + 7) {
+  display: none;
+}

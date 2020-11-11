@@ -1,0 +1,12 @@
+.edit-profile__job {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.edit-profile__job::placeholder {
+  color: rgba(0,0,0,.2);
+  font-size: 14px;
+line-height: 30px;
+}

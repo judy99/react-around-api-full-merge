@@ -1,0 +1,21 @@
+.login__email {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  border: 0;
+  border-bottom: 2px solid #CCCCCC;
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+.login__email:focus {
+  background-color: #000;
+  outline: none;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.login__email::placeholder {
+  color: #CCCCCC;
+  font-size: 14px;
+  line-height: 17px;
+}

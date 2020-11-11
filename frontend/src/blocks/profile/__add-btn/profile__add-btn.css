@@ -1,0 +1,49 @@
+.profile__add-btn {
+  position: relative;
+  width: 150px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #000;
+  align-self: center;
+}
+
+.profile__add-btn:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.profile__add-btn::before {
+  content: '+';
+  color: #fff;
+  font-size: 50px;
+  font-weight: 200;
+  position: relative;
+  top: -3px;
+  line-height: 0.9;
+  left: 0;
+}
+
+.profile__add-btn:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 870px) {
+  .profile__add-btn {
+    align-self: flex-start;
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile__add-btn {
+    margin: 0;
+    align-self: center;
+    width: 100%;
+  }
+  .profile__add-btn::before {
+    font-size: 42px;
+    line-height: 1;
+    top: -5px;
+}
+}

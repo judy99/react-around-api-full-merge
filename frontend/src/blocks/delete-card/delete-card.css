@@ -1,0 +1,7 @@
+@import url('__heading/delete-card__heading.css');
+@import url('__submit/delete-card__submit.css');
+
+.delete-card {
+  display: flex;
+  flex-direction: column;
+}

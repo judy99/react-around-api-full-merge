@@ -1,0 +1,19 @@
+.profile__avatar-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.profile__avatar-wrapper:hover {
+  cursor: pointer;
+}
+
+.profile__avatar-wrapper:hover  .profile__avatar {
+  opacity: 0.3;
+  transition: opacity .3s ease;
+}
+
+.profile__avatar-wrapper:hover .profile__avatar-hover {
+  visibility: visible;
+  opacity: 1;
+}

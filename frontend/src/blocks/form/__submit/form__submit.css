@@ -1,0 +1,10 @@
+.form__submit {
+  height: 50px;
+  background: #000000;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.form__submit:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

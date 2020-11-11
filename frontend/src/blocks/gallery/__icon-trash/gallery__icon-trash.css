@@ -1,0 +1,21 @@
+.gallery__icon-trash {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 18px;
+  height: 20px;
+  background: none;
+  background-image: url('../../../images/trash.png');
+  background-size: contain;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.gallery__icon-trash.gallery__icon-trash_hidden {
+  display: none;
+}
+
+.gallery__icon-trash:hover {
+  opacity: 0.6;
+}
