@@ -11,14 +11,18 @@ const app = express();
 app.use(cors());
 
 // connect to the MongoDB server
-mongoose.connect('mongodb://localhost:27017/aroundb', {
+// mongoose.connect('mongodb://localhost:27017/aroundb', {
+mongoose.connect('mongodb://127.0.0.1:27017/aroundb', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
 });
 
-app.use(express.static(path.join(__dirname, 'build')));
+// connect the main application router at /api
+app.use('/api', require('../router'));
+
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(requestLogger);
