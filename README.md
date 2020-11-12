@@ -10,7 +10,8 @@ Link to repository with the complete React application which uses this API:
 https://github.com/judy99/react-around-auth.git
 
 Link to the website that hosts your API.
-
+https://www.liakurianova.students.nomoreparties.site
+Public IP: 13.68.149.188
 
 ## Routes
 

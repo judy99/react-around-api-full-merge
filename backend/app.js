@@ -22,13 +22,19 @@ mongoose.connect('mongodb://127.0.0.1:27017/aroundb', {
 // connect the main application router at /api
 app.use('/api', require('../router'));
 
-app.use(express.static(path.join(__dirname, 'frontend', 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(requestLogger);
 
 const cardsRoute = require('./routes/cards');
 const usersRoute = require('./routes/users');
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Server will crash now');
+  }, 0);
+}); 
 
 app.use(cardsRoute);
 app.use(usersRoute);
