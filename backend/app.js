@@ -6,9 +6,12 @@ const { errors } = require('celebrate');
 const error = require('./middlewares/error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const path = require('path');
+const dotenv = require('dotenv').config();
 
 const app = express();
 app.use(cors());
+
+console.log(process.env.NODE_ENV); // production
 
 // connect to the MongoDB server
 // mongoose.connect('mongodb://localhost:27017/aroundb', {

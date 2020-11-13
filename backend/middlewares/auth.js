@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { AuthError } = require('../errors/auth-err');
+const { NODE_ENV, JWT_SECRET } = process.env;
 
 module.exports = (req, res, next) => {
   const { authorization } = req.headers;
@@ -10,7 +11,7 @@ module.exports = (req, res, next) => {
 
   const token = authorization.replace('Bearer ', '');
 
-  jwt.verify(token, 'some-secret-key', (err, payload) => {
+  jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret', (err, payload) => {
     if (err) {
       throw new AuthError('The provided token is invalid.');
     } else {

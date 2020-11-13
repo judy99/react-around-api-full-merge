@@ -7,8 +7,7 @@ const { NotFoundError } = require('../errors/not-found-err');
 const { BadReqError } = require('../errors/bad-req-err');
 const { AuthError } = require('../errors/auth-err');
 const { defaultUser } = require('../utils/defaultUser');
-
-const JWT_KEY = 'some-secret-key';
+const { NODE_ENV, JWT_SECRET } = process.env;
 
 const getUsers = (req, res, next) => {
   User.find({})
@@ -115,7 +114,9 @@ const login = (req, res, next) => {
         throw new AuthError('Authentication error.Can\'t find user.');
       }
       // we're creating a token
-      const token = jwt.sign({ _id: user._id }, JWT_KEY, { expiresIn: '7d' });
+      const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret', { expiresIn: '7d' });
+	console.log(process.env.NODE_ENV); // production
+
       res.status(httpStatusCode.OK).send({ token });
     })
     .catch((err) => next(err));
