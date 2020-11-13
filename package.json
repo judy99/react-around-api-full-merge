@@ -1,0 +1,19 @@
+{
+  "name": "react-around-api-full-merge",
+  "version": "1.0.0",
+  "description": "Backend and frontend for Around US website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judy99/react-around-api-full-merge.git"
+  },
+  "author": "Lia Kurianova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/judy99/react-around-api-full-merge/issues"
+  },
+  "homepage": "https://github.com/judy99/react-around-api-full-merge#readme"
+}
